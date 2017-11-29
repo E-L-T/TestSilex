@@ -1,0 +1,18 @@
+<!DOCTYPE>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}Test Silex{% endblock %}</title>
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <nav>
+            <a href="{{ path('home') }}" title="Aller à l'accueil">Accueil</a> {# path('home') est la route. il faut la définir dans l'index #}
+            <a href="{{ path('listusers') }}" title="Voici la liste des utilisateurs">Utilisateurs</a>
+        </nav>
+        {% block content %}{% endblock %}
+        <footer>
+            Mon footer
+        </footer>
+    </body>
+</html>

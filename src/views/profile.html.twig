@@ -1,0 +1,13 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Profil de {{ user.firstname }} {{ user.lastname }} {% endblock %}
+
+{% block content %}
+    
+    <h1>Profil de  {{ user.firstname }} {{ user.lastname }}</h1>
+    
+    Email : {{user.email }}
+    
+    Login : {{user.username}}
+    
+{% endblock %}

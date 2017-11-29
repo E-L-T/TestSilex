@@ -1,0 +1,18 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Liste des utilisateurs{% endblock %}
+{# Ceci est un commentaire #}
+{% block content %}
+    
+    <h1>Liste des utilisateurs</h1>
+    
+    <ul>
+    
+        {% for user in users %}
+            <li><a href="{{path('profile', {id :user.id}) }}">{{ user.firstname }} {{ user.lastname }}</a></li>
+        {% endfor %}
+
+    </ul>
+
+    
+{% endblock %}
